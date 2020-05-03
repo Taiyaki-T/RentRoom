@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+//    return view('welcome');
+    return bcrypt('admin888');
 });
 
+// 引入定义好的后台登陆文件
+include base_path('routes/admin/admin.php');
 
 //Route::get()
